@@ -79,7 +79,7 @@ app.use((req,res,next)=>{
 });
 
 app.get("/",(req,res)=>{
-  res.redirect("/signup"):});
+  res.redirect("/signup")});
 
 app.use("/listings",listingsRouter);
 app.use("/listings/:id/reviews",reviewRouter);
