@@ -78,6 +78,9 @@ app.use((req,res,next)=>{
     next();
 });
 
+app.get("/",(req,res)=>{
+  res.redirect("/signup"):});
+
 app.use("/listings",listingsRouter);
 app.use("/listings/:id/reviews",reviewRouter);
 app.use("/",userRouter);
